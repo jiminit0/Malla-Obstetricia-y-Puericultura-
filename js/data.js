@@ -1,4 +1,4 @@
-const allCourses = [
+const courses = [
   {
     name: "FUNDAMENTOS DE ENFERMERÍA 1",
     semester: 1,
