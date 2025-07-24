@@ -8,7 +8,7 @@ document.addEventListener("DOMContentLoaded", () => {
         const agrupado = {};
 
         course.forEach(curso => {
-            if (!agrupado[curso.semestre]) agrupado[course.semestre] = [];
+            if (!agrupado[course.semestre]) agrupado[course.semestre] = [];
             agrupado[course.semestre].push(curso);
         });
 
