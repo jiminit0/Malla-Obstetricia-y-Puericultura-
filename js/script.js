@@ -8,8 +8,8 @@ document.addEventListener("DOMContentLoaded", () => {
         const agrupado = {};
 
         course.forEach(curso => {
-            if (!agrupado[course.semestre]) agrupado[course.semestre] = [];
-            agrupado[course.semestre].push(course);
+            if (!agrupado[curso.semestre]) agrupado[curso.semestre] = [];
+            agrupado[curso.semestre].push(curso);
         });
 
         for (const semestre in agrupado) {
@@ -19,28 +19,28 @@ document.addEventListener("DOMContentLoaded", () => {
             title.textContent = semestre;
             semDiv.appendChild(title);
 
-            agrupado[semestre].forEach(course => {
+            agrupado[semestre].forEach(curso => {
                 const div = document.createElement("div");
-                div.className = "course";
-                div.textContent = course.nombre;
+                div.className = "curso";
+                div.textContent = curso.nombre;
 
-                const locked = course.prerrequisitos.length > 0 &&
-                    !course.prerrequisitos.every(pr => aprobados.has(pr));
+                const locked = curso.prerrequisitos.length > 0 &&
+                    !curso.prerrequisitos.every(pr => aprobados.has(pr));
 
                 if (locked) {
                     div.classList.add("locked");
                 } else {
                     div.addEventListener("click", () => {
-                        if (aprobados.has(course.nombre)) {
-                            aprobados.delete(course.nombre);
+                        if (aprobados.has(curso.nombre)) {
+                            aprobados.delete(curso.nombre);
                         } else {
-                            aprobados.add(course.nombre);
+                            aprobados.add(curso.nombre);
                         }
                         render();
                     });
                 }
 
-                if (aprobados.has(course.nombre)) {
+                if (aprobados.has(curso.nombre)) {
                     div.classList.add("approved");
                 }
 
