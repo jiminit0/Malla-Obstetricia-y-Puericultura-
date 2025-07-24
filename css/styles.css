@@ -1,59 +1,63 @@
 body {
-    background-color: #ffe8e8;
-    color: #800000;
-    font-family: Arial, sans-serif;
-    padding: 20px;
+  background-color: #ffe8e8;
+  color: #800000;
+  font-family: Arial, sans-serif;
+  padding: 20px;
 }
 #malla-container {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 20px;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  justify-content: flex-start;
 }
 h1 {
-    text-align: center;
-    color: #b52121;
+  text-align: center;
+  color: #b52121;
 }
 footer {
-    margin-top: 40px;
-    text-align: center;
-    font-style: italic;
-    color: #a52a2a;
+  margin-top: 40px;
+  text-align: center;
+  font-style: italic;
+  color: #a52a2a;
 }
 .semestre {
-    background-color: #ffdfdf;
-    padding: 1rem;
-    border-radius: 12px;
-    width: 22%; /* antes estaba en 280px */
-    box-shadow: 0 2px 6px rgba(0,0,0,0.05);
-    min-width: 200px;
+  background-color: #ffdfdf;
+  padding: 1rem;
+  border-radius: 12px;
+  width: 22%;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  min-width: 200px;
 }
 .semestre h2 {
-    text-align: center;
-    color: #b30707;
-    font-size: 1.2rem;
-    margin-bottom: 1rem;
-    border-bottom: 2px solid #fc8383;
-    padding-bottom: 0.5rem;
+  text-align: center;
+  color: #b30707;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+  border-bottom: 2px solid #fc8383;
+  padding-bottom: 0.5rem;
 }
 .curso {
-    border: 2px solid #fc8383;
-    border-radius: 10px;
-    padding: 10px;
-    margin: 8px;
-    display: inline-block;
-    width: 200px;
-    background-color: #ffe5e5;
-    text-align: center;
-    cursor: pointer;
-    transition: all 0.3s ease;
-}
-.curso.locked {
-    background-color: #ebe4e4;
-    cursor: not-allowed;
+  border: 2px solid #ffb5b5;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 8px;
+  display: inline-block;
+  width: 200px;
+  background-color: #ffebeb;
+  color: #b52121;
+  text-align: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
 }
 .curso.approved {
-    background-color: #cf2323;
-    text-decoration: line-through;
-    color: white;
+  background-color: #ffe8e8;
+  border: 2px solid #fc8383;
+  color: #cf2323;
+  text-decoration: line-through;
+}
+.curso.locked {
+  background-color: #ebe4e4;
+  border: 2px solid #e5e7eb;
+  color: #b0acac;
+  cursor: not-allowed;
 }
