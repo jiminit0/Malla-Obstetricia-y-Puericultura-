@@ -9,7 +9,7 @@ const cursos = [
         nombre: "QUÍMICA GENERAL Y ORGÁNICA",
         semestre: "Año 1 - Semestre 1",
         prerrequisitos: []
-    }
+    },
     {
         nombre: "BIOLOGÍA CELULAR Y GENÉTICA",
         semestre: "Año 1 - Semestre 1",
