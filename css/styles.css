@@ -48,11 +48,11 @@ footer {
     transition: all 0.3s ease;
 }
 .curso.locked {
-    background-color: #cccccc;
+    background-color: #ebe4e4;
     cursor: not-allowed;
 }
 .curso.approved {
-    background-color: #8b0000;
+    background-color: #cf2323;
     text-decoration: line-through;
     color: white;
 }
