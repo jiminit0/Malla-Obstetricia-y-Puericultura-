@@ -18,7 +18,7 @@ footer {
 .semestre {
     margin: 20px 0;
 }
-.course {
+.curso {
     border: 2px solid #b22222;
     border-radius: 10px;
     padding: 10px;
@@ -30,11 +30,11 @@ footer {
     cursor: pointer;
     transition: all 0.3s ease;
 }
-.course.locked {
+.curso.locked {
     background-color: #cccccc;
     cursor: not-allowed;
 }
-.course.approved {
+.curso.approved {
     background-color: #8b0000;
     text-decoration: line-through;
     color: white;
