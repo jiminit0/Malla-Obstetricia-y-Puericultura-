@@ -137,7 +137,7 @@ const cursos = [
     },
     {
         nombre: "OBSTETRICIA FISIOLÓGICA 2",
-        semestre: "Año 2 - Semestre 1",
+        semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["OBSTETRICIA FISIOLÓGICA 1", "FISIOLOGÍA DE SISTEMAS"]
     },
 
