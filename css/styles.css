@@ -15,23 +15,27 @@ footer {
     font-style: italic;
     color: #a52a2a;
 }
+.semestre {
+    margin: 20px 0;
+}
 .course {
-    border: 1px solid #b22222;
-    border-radius: 8px;
+    border: 2px solid #b22222;
+    border-radius: 10px;
     padding: 10px;
-    margin: 10px;
+    margin: 8px;
+    display: inline-block;
+    width: 200px;
     background-color: #ffe5e5;
+    text-align: center;
     cursor: pointer;
+    transition: all 0.3s ease;
 }
-.semester {
-    margin-top: 20px;
+.course.locked {
+    background-color: #cccccc;
+    cursor: not-allowed;
 }
-.locked {
-    background-color: #dddddd;
-    pointer-events: none;
-}
-.approved {
-    background-color: #b22222 !important;
-    color: white;
+.course.approved {
+    background-color: #8b0000;
     text-decoration: line-through;
+    color: white;
 }
