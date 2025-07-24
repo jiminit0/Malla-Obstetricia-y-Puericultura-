@@ -1,0 +1,41 @@
+
+body {
+    background-color: white;
+    color: #800000;
+    font-family: Arial, sans-serif;
+    padding: 20px;
+}
+h1 {
+    text-align: center;
+    color: #b22222;
+}
+footer {
+    margin-top: 40px;
+    text-align: center;
+    font-style: italic;
+    color: #a52a2a;
+}
+.semestre {
+    margin: 20px 0;
+}
+.course {
+    border: 2px solid #b22222;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 8px;
+    display: inline-block;
+    width: 200px;
+    background-color: #ffe5e5;
+    text-align: center;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.course.locked {
+    background-color: #cccccc;
+    cursor: not-allowed;
+}
+.course.approved {
+    background-color: #8b0000;
+    text-decoration: line-through;
+    color: white;
+}
