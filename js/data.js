@@ -1,5 +1,5 @@
 
-const course = [
+const curso = [
     {
         nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
         semestre: "Año 1 - Semestre 1",
