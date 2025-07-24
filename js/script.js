@@ -1,63 +1,55 @@
 
 document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("malla-container");
+    const aprobados = new Set();
 
-    const cursosPorSemestre = {};
+    function render() {
+        container.innerHTML = "";
+        const agrupado = {};
 
-    cursos.forEach(curso => {
-        if (!cursosPorSemestre[curso.semestre]) {
-            cursosPorSemestre[curso.semestre] = [];
-        }
-        cursosPorSemestre[curso.semestre].push(curso);
-    });
+        cursos.forEach(curso => {
+            if (!agrupado[curso.semestre]) agrupado[curso.semestre] = [];
+            agrupado[curso.semestre].push(curso);
+        });
 
-    for (const semestre in cursosPorSemestre) {
-        const semestreDiv = document.createElement("div");
-        semestreDiv.className = "semestre";
-        const titulo = document.createElement("h2");
-        titulo.textContent = semestre;
-        semestreDiv.appendChild(titulo);
+        for (const semestre in agrupado) {
+            const semDiv = document.createElement("div");
+            semDiv.className = "semester";
+            const title = document.createElement("h2");
+            title.textContent = semestre;
+            semDiv.appendChild(title);
 
-        cursosPorSemestre[semestre].forEach(curso => {
-            const div = document.createElement("div");
-            div.className = "course";
-            div.textContent = curso.nombre;
+            agrupado[semestre].forEach(curso => {
+                const div = document.createElement("div");
+                div.className = "course";
+                div.textContent = curso.nombre;
 
-            div.dataset.nombre = curso.nombre;
-            div.dataset.prerrequisitos = JSON.stringify(curso.prerrequisitos);
+                const locked = curso.prerrequisitos.length > 0 &&
+                    !curso.prerrequisitos.every(pr => aprobados.has(pr));
 
-            div.addEventListener("click", () => {
-                if (div.classList.contains("locked")) return;
-                div.classList.toggle("approved");
-                actualizarEstado();
+                if (locked) {
+                    div.classList.add("locked");
+                } else {
+                    div.addEventListener("click", () => {
+                        if (aprobados.has(curso.nombre)) {
+                            aprobados.delete(curso.nombre);
+                        } else {
+                            aprobados.add(curso.nombre);
+                        }
+                        render();
+                    });
+                }
+
+                if (aprobados.has(curso.nombre)) {
+                    div.classList.add("approved");
+                }
+
+                semDiv.appendChild(div);
             });
 
-            semestreDiv.appendChild(div);
-        });
-
-        container.appendChild(semestreDiv);
+            container.appendChild(semDiv);
+        }
     }
 
-    function actualizarEstado() {
-        const aprobados = Array.from(document.querySelectorAll(".course.approved"))
-            .map(div => div.dataset.nombre);
-
-        document.querySelectorAll(".course").forEach(div => {
-            const requisitos = JSON.parse(div.dataset.prerrequisitos);
-            const estaAprobado = div.classList.contains("approved");
-
-            if (!estaAprobado && requisitos.length > 0) {
-                const cumplidos = requisitos.every(req => aprobados.includes(req));
-                if (cumplidos) {
-                    div.classList.remove("locked");
-                } else {
-                    div.classList.add("locked");
-                }
-            } else if (requisitos.length === 0) {
-                div.classList.remove("locked");
-            }
-        });
-    }
-
-    actualizarEstado();
+    render();
 });
