@@ -14,7 +14,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         for (const semestre in agrupado) {
             const semDiv = document.createElement("div");
-            semDiv.className = "semester";
+            semDiv.className = "semestre";
             const title = document.createElement("h2");
             title.textContent = semestre;
             semDiv.appendChild(title);
