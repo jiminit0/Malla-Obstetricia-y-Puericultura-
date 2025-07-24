@@ -7,9 +7,9 @@ document.addEventListener("DOMContentLoaded", () => {
         container.innerHTML = "";
         const agrupado = {};
 
-        cursos.forEach(curso => {
-            if (!agrupado[curso.semestre]) agrupado[curso.semestre] = [];
-            agrupado[curso.semestre].push(curso);
+        course.forEach(curso => {
+            if (!agrupado[curso.semestre]) agrupado[course.semestre] = [];
+            agrupado[course.semestre].push(curso);
         });
 
         for (const semestre in agrupado) {
@@ -24,23 +24,23 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.className = "course";
                 div.textContent = curso.nombre;
 
-                const locked = curso.prerrequisitos.length > 0 &&
-                    !curso.prerrequisitos.every(pr => aprobados.has(pr));
+                const locked = course.prerrequisitos.length > 0 &&
+                    !course.prerrequisitos.every(pr => aprobados.has(pr));
 
                 if (locked) {
                     div.classList.add("locked");
                 } else {
                     div.addEventListener("click", () => {
-                        if (aprobados.has(curso.nombre)) {
-                            aprobados.delete(curso.nombre);
+                        if (aprobados.has(course.nombre)) {
+                            aprobados.delete(course.nombre);
                         } else {
-                            aprobados.add(curso.nombre);
+                            aprobados.add(course.nombre);
                         }
                         render();
                     });
                 }
 
-                if (aprobados.has(curso.nombre)) {
+                if (aprobados.has(course.nombre)) {
                     div.classList.add("approved");
                 }
 
