@@ -81,49 +81,64 @@ const cursos = [
         prerrequisitos: ["FUNDAMENTOS DE ENFERMERÍA 1"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
+        nombre: "CURSO DE FORMACION GENERAL 2",
+        semestre: "Año 1 - Semestre 2",
         prerrequisitos: []
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "INGLÉS 2",
+        semestre: "Año 1 - Semestre 2",
+        prerrequisitos: ["INGLÉS 1"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "FUNDAMENTOS DE ENFERMERÍA 2",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["HISTOLOGÍA", "ANATOMÍA", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 1", "FISIOLOGÍA GENERAL"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "OBSTETRICIA FISIOLÓGICA 1",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["BIOLOGÍA DEL DESARROLLO Y EMBRIOLOGÍA HUMANA", "FISIOLOGÍA GENERAL", "HISTOLOGÍA", "ANATOMÍA", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 1"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "NEONATOLOGÍA 1",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["BIOLOGÍA DEL DESARROLLO Y EMBRIOLOGÍA HUMANA", "FISIOLOGÍA GENERAL", "HISTOLOGÍA", "ANATOMÍA", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 1"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "FISIOLOGÍA DE SISTEMAS",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["FISIOLOGÍA GENERAL"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "INMUNOLOGÍA",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["FISIOLOGÍA GENERAL"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "AGENTES VIVOS DE ENFERMEDAD",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["FISIOLOGÍA GENERAL", "HISTOLOGÍA"]
     },
     {
-        nombre: "FUNDAMENTOS DE ENFERMERÍA 1",
-        semestre: "Año 1 - Semestre 1",
-        prerrequisitos: []
+        nombre: "CIENCIAS SOCIALES Y SALUD 2",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["CIENCIAS SOCIALES Y SALUD 1"]
+    },
+    {
+        nombre: "INGLÉS 3",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["INGLÉS 2"]
+    },
+    {
+        nombre: "NEONATOLOGÍA 2",
+        semestre: "Año 2 - Semestre 2",
+        prerrequisitos: ["AGENTES VIVOS DE ENFERMEDAD", "NEONATOLOGÍA 1", "FISIOLOGÍA DE SISTEMAS"]
+    },
+    {
+        nombre: "OBSTETRICIA FISIOLÓGICA 2",
+        semestre: "Año 2 - Semestre 1",
+        prerrequisitos: ["OBSTETRICIA FISIOLÓGICA 1", "FISIOLOGÍA DE SISTEMAS"]
     },
 
 ];
