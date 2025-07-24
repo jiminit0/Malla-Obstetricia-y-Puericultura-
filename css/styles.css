@@ -1,5 +1,5 @@
 body {
-    background-color: white;
+    background-color: #ffb8b8;
     color: #ffb5b5;
     font-family: Arial, sans-serif;
     padding: 20px;
@@ -32,11 +32,11 @@ footer {
     color: #f5b4b4;
     font-size: 1.2rem;
     margin-bottom: 1rem;
-    border-bottom: 2px solid #f0d6d6;
+    border-bottom: 2px solid #fc8383;
     padding-bottom: 0.5rem;
 }
 .curso {
-    border: 2px solid #b22222;
+    border: 2px solid #fc8383;
     border-radius: 10px;
     padding: 10px;
     margin: 8px;
