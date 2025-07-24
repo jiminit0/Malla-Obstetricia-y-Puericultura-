@@ -9,7 +9,7 @@ document.addEventListener("DOMContentLoaded", () => {
 
         course.forEach(curso => {
             if (!agrupado[course.semestre]) agrupado[course.semestre] = [];
-            agrupado[course.semestre].push(curso);
+            agrupado[course.semestre].push(course);
         });
 
         for (const semestre in agrupado) {
@@ -19,10 +19,10 @@ document.addEventListener("DOMContentLoaded", () => {
             title.textContent = semestre;
             semDiv.appendChild(title);
 
-            agrupado[semestre].forEach(curso => {
+            agrupado[semestre].forEach(course => {
                 const div = document.createElement("div");
                 div.className = "course";
-                div.textContent = curso.nombre;
+                div.textContent = course.nombre;
 
                 const locked = course.prerrequisitos.length > 0 &&
                     !course.prerrequisitos.every(pr => aprobados.has(pr));
