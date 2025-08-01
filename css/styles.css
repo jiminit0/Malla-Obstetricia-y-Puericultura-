@@ -3,6 +3,9 @@ body {
   color: #800000;
   font-family: Arial, sans-serif;
   padding: 20px;
+  width: 100%;
+  box-sizing: border-box;
+  padding: 10px;
 }
 #malla-container {
   display: flex;
@@ -49,6 +52,11 @@ footer {
   text-align: center;
   cursor: pointer;
   transition: all 0.3s ease;
+  word-wrap: break-word;
+  overflow: hidden;
+  text-align: center;
+  padding: 10px;
+  box-sizing: border-box;
 }
 .curso.approved {
   background-color: #ffe8e8;
