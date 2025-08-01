@@ -288,4 +288,89 @@ const cursos = [
         prerrequisitos: [],
         creditos: 2
     },
+    {
+        nombre: "ENFERMERÍA MÉDICO QUIRÚRGICA",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["NEONATOLOGÍA 3", "OBSTETRICIA PATOLÓGICA"],
+        creditos: 6
+    },
+     {
+        nombre: "REPRODUCCIÓN HUMANA",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["FISIOLOGÍA DE SISTEMAS"],
+        creditos: 2
+    },
+    {
+        nombre: "GINECOLOGÍA PATOLÓGICA",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["CLÍNICA DE ATENCIÓN PRIMARIA 1"],
+        creditos: 5
+    },
+    {
+        nombre: "GESTIÓN Y LIDERAZGO EN SALUD 2",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["GESTIÓN Y LIDERAZGO Y EN SALUD 1"],
+        creditos: 5
+    },
+    {
+        nombre: "INVESTIGACIÓN EN SALUD 3",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["INVESTIGACIÓN EN SALUD 2"],
+        creditos: 6
+    },
+     {
+        nombre: "CIENCIAS SOCIALES Y SALUD 4",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["CIENCIAS SOCIALES Y SALUD 3"],
+        creditos: 4
+    },
+    {
+        nombre: "CURSO DE FORMACIÓN GENERAL 4",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["CURSO DE FORMACION GENERAL 3"],
+        creditos: 2
+    },
+    {
+        nombre: "INGLÉS 4",
+        semestre: "Año 4 - Semestre 1",
+        prerrequisitos: ["INGLÉS 3"],
+        creditos: 3
+    },
+    {
+        nombre: "CLÍNICA NEONATAL 2",
+        semestre: "Año 4 - Semestre 2",
+        prerrequisitos: ["ENFERMERÍA MÉDICO QUIRÚRGICA", "NEONATOLOGÍA 3"],
+        creditos: 5
+    },
+    {
+        nombre: "CLÍNICA DE PARTOS 2",
+        semestre: "Año 4 - Semestre 2",
+        prerrequisitos: ["ENFERMERÍA MÉDICO QUIRÚRGICA", "OBSTETRICIA PATOLÓGICA"],
+        creditos: 4
+    },
+    {
+        nombre: "CLÍNICA DE ATENCIÓN PRIMARIA 2",
+        semestre: "Año 4 - Semestre 2",
+        prerrequisitos: ["OBSTETRICIA PATOLÓGICA", "GINECOLOGÍA PATOLÓGICA", "SALUD COMUNITARIA 2"],
+        creditos: 3
+    },
+    {
+        nombre: "CLÍNICA DE ALTO RIESGO OBSTÉTRICO",
+        semestre: "Año 4 - Semestre 2",
+        prerrequisitos: ["ENFERMERÍA MÉDICO QUIRÚRGICA", "OBSTETRICIA PATOLÓGICA"],
+        creditos: 3
+    },
+        {
+        nombre: "CLÍNICA DE ENFERMERÍA MÉDICO QUIRÚRGICA",
+        semestre: "Año 4 - Semestre 2",
+        prerrequisitos: ["GINECOLOGÍA PATOLÓGICA", "ENFERMERÍA MÉDICO QUIRÚRGICA"],
+        creditos: 3
+    },
+        {
+        nombre: "MÓDULO INTEGRADO INTERDICIPLINARIO MULTIPROFESIONAL 2",
+        semestre: "Año 4 - Semestre 2",
+        prerrequisitos: ["MÓDULO INTEGRADO INTERDICIPLINARIO MULTIPROFESIONAL 1"],
+        creditos: 3
+    },
+
 ];
