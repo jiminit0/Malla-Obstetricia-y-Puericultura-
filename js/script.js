@@ -42,8 +42,6 @@ document.addEventListener("DOMContentLoaded", () => {
                         locked = true;
                     }
                 }
-                const locked = curso.prerrequisitos.length > 0 &&
-                    !curso.prerrequisitos.every(pr => aprobados.has(pr));
 
                 if (locked) {
                     div.classList.add("locked");
