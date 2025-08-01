@@ -168,5 +168,35 @@ const cursos = [
         prerrequisitos: ["OBSTETRICIA FISIOLÓGICA 1", "FISIOLOGÍA DE SISTEMAS"],
         creditos: 3
     },
-
+    {
+        nombre: "GINECOLOGÍA FISIOLÓGICA",
+        semestre: "Año 2 - Semestre 2",
+        prerrequisitos: ["HISTOLOGÍA", "ANATOMÍA", "FISIOLOGÍA DE SISTEMAS"],
+        creditos: 3
+    },    {
+        nombre: "FISIOPATOLOGÍA",
+        semestre: "Año 2 - Semestre 2",
+        prerrequisitos: ["FISIOLOGÍA DE SISTEMAS"],
+        creditos: 3
+    },    {
+        nombre: "INFECTOLOGÍA",
+        semestre: "Año 2 - Semestre 2",
+        prerrequisitos: ["AGENTES VIVOS DE ENFERMEDAD"],
+        creditos: 3
+    },    {
+        nombre: "FARMACOLOGÍA",
+        semestre: "Año 2 - Semestre 2",
+        prerrequisitos: ["BIOQUÍMICA", "FISIOLOGÍA DE SISTEMAS"],
+        creditos: 3
+    },    {
+        nombre: "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2",
+        semestre: "Año 2 - Semestre 2",
+        prerrequisitos: ["FUNDAMENTOS DE ENFERMERÍA 2", "FISIOLOGÍA DE SISTEMAS"],
+        creditos: 3
+    },    {
+        nombre: "INVESTIGACIÓN EN SALUD 1",
+        semestre: "Año 2 - Semestre 2",
+        prerrequisitos: ["FÍSICA", "MATEMÁTICAS"],
+        creditos: 3
+    },
 ];
