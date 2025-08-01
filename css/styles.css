@@ -28,14 +28,14 @@ footer {
   color: #a52a2a;
 }
 .semestre {
-  background-color: #ffdfdf;
+  background-color: #ffe8e8;
   padding: 15px;
   border-radius: 12px;
   width: 22%;
   box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
   min-width: 200px;
   align-items: center;
-  background-color: #ffe8e8;
+  background-color: #ffdfdf;
   border: 2px solid #b52121;
   margin-bottom: 30px;
 }
