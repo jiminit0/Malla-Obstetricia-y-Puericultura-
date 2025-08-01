@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
             title.textContent = semestre;
             semDiv.appendChild(title);
 
-            // Para el Año 5 hacemos subtítulos internos
+    
             if (semestre === "Año 5") {
                 const cursos = agrupado[semestre];
 
