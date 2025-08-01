@@ -352,25 +352,25 @@ const cursos = [
         nombre: "CLÍNICA DE ATENCIÓN PRIMARIA 2",
         semestre: "Año 4 - Semestre 2",
         prerrequisitos: ["OBSTETRICIA PATOLÓGICA", "GINECOLOGÍA PATOLÓGICA", "SALUD COMUNITARIA 2"],
-        creditos: 3
+        creditos: 5
     },
     {
         nombre: "CLÍNICA DE ALTO RIESGO OBSTÉTRICO",
         semestre: "Año 4 - Semestre 2",
         prerrequisitos: ["ENFERMERÍA MÉDICO QUIRÚRGICA", "OBSTETRICIA PATOLÓGICA"],
-        creditos: 3
+        creditos: 4
     },
         {
         nombre: "CLÍNICA DE ENFERMERÍA MÉDICO QUIRÚRGICA",
         semestre: "Año 4 - Semestre 2",
         prerrequisitos: ["GINECOLOGÍA PATOLÓGICA", "ENFERMERÍA MÉDICO QUIRÚRGICA"],
-        creditos: 3
+        creditos: 4
     },
         {
         nombre: "MÓDULO INTEGRADO INTERDICIPLINARIO MULTIPROFESIONAL 2",
         semestre: "Año 4 - Semestre 2",
         prerrequisitos: ["MÓDULO INTEGRADO INTERDICIPLINARIO MULTIPROFESIONAL 1"],
-        creditos: 3
+        creditos: 5
     },
 
 ];
