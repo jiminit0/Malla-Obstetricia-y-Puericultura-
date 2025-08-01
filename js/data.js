@@ -372,8 +372,6 @@ const cursos = [
         prerrequisitos: ["MÓDULO INTEGRADO INTERDICIPLINARIO MULTIPROFESIONAL 1"],
         creditos: 5
     },
-{
-  cursos: [
     {
       nombre: "SEMINARIO UNIDAD DE INVESTIGACIÓN 1",
       creditos: 2,
@@ -423,6 +421,4 @@ const cursos = [
       semestreExacto: "Ambos",
       creditosMinimos: 240
     }
-  ]
-}
 ];
