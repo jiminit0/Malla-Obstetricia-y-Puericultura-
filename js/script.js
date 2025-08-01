@@ -24,8 +24,8 @@ document.addEventListener("DOMContentLoaded", () => {
                 div.className = "curso";
                 div.textContent = curso.nombre;
                 div.innerHTML = `
-                <strong>${curso.nombre}</strong><br>
-                <small>${curso.creditos} créditos</small>
+                    <strong>${curso.nombre}</strong><br>
+                    <small>${curso.creditos || 0} créditos</small>
                 `;
                 let locked = false;
                 if (curso.prerrequisitos.length > 0 && !curso.prerrequisitos.every(pr => aprobados.has(pr))) {
