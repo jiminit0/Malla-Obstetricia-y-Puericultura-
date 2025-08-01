@@ -178,25 +178,66 @@ const cursos = [
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["FISIOLOGÍA DE SISTEMAS"],
         creditos: 5
-    },    {
+    },    
+    {
         nombre: "INFECTOLOGÍA",
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["AGENTES VIVOS DE ENFERMEDAD"],
         creditos: 3
-    },    {
+    },    
+    {
         nombre: "FARMACOLOGÍA",
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["BIOQUÍMICA", "FISIOLOGÍA DE SISTEMAS"],
         creditos: 4
-    },    {
+    },    
+    {
         nombre: "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2",
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["FUNDAMENTOS DE ENFERMERÍA 2", "FISIOLOGÍA DE SISTEMAS"],
         creditos: 3
-    },    {
+    },    
+    {
         nombre: "INVESTIGACIÓN EN SALUD 1",
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["FÍSICA", "MATEMÁTICAS"],
         creditos: 3
+    },
+    {
+        nombre: "CLÍNICA NEONATAL 1",
+        semestre: "Año 3 - Semestre 1",
+        prerrequisitos: ["NEONATOLOGÍA 2", "INFECTOLOGÍA", "FISIOPATOLOGÍA", "FARMACOLOGÍA", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2"],
+        creditos: 5
+    },
+    {
+        nombre: "CLÍNICA DE PARTOS 1",
+        semestre: "Año 3 - Semestre 1",
+        prerrequisitos: ["NEONATOLOGÍA 2", "INFECTOLOGÍA", "FISIOPATOLOGÍA", "FARMACOLOGÍA", "OBSTETRICIA FISIOLÓGICA 2", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2"],
+        creditos: 5
+    },
+    {
+        nombre: "CLÍNICA DE ATENCIÓN PRIMARIA 1",
+        semestre: "Año 3 - Semestre 1",
+        prerrequisitos: [ "GINECOLOGÍA FISIOLÓGICA", "OBSTETRICIA FISIOLÓGICA 2", "NEONATOLOGÍA 2", "INFECTOLOGÍA", "FISIOPATOLOGÍA", "FARMACOLOGÍA", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2"],
+        creditos: 5
+    },
+    {
+        nombre: "CLÍNICA PUERPERIO",
+        semestre: "Año 3 - Semestre 1",
+        prerrequisitos: [ "OBSTETRICIA FISIOLÓGICA 2", "NEONATOLOGÍA 2", "INFECTOLOGÍA", "FISIOPATOLOGÍA", "FARMACOLOGÍA", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2"],
+        creditos: 5
+    },
+    {
+        nombre: "CLÍNICA DE SALUD COMUNITARIA",
+        semestre: "Año 3 - Semestre 1",
+        prerrequisitos: ["EDUCACIÓN EN SALUD 1", "SALUD COMUNITARIA 1", "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2"],
+        creditos: 4
+    },
+    {
+        nombre: "MÓDULO INTEGRADO INTERDISCIPLINADO MULTIPROFESIONAL 1",
+        semestre: "Año 3 - Semestre 1",
+        prerrequisitos: [],
+        creditos: 4
+        creditosMinimos: 90
     },
 ];
