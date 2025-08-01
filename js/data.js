@@ -240,4 +240,52 @@ const cursos = [
         creditos: 4
         creditosMinimos: 90
     },
+    {
+        nombre: "NEONATOLOGÍA 3",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: ["OBSTETRICIA FISIOLÓGICA 2", "NEONATOLOGÍA 2", "FISIOPATOLOGÍA", "FARMACOLOGÍA"],
+        creditos: 4
+    },
+    {
+        nombre: "SALUD COMUNITARIA 2",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: ["SALUD COMUNITARIA 1"],
+        creditos: 6
+    },
+    {
+        nombre: "OBSTETRICIA PATOLÓGICA",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: ["OBSTETRICIA FISIOLÓGICA 2", "NEONATOLOGÍA 2", "FISIOPATOLOGÍA", "FARMACOLOGÍA"],
+        creditos: 4
+    },
+    {
+        nombre: "GESTIÓN Y LIDERAZGO Y EN SALUD 1",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: ["INVESTIGACIÓN EN SALUD 1"],
+        creditos: 4
+    },
+    {
+        nombre: "EDUCACIÓN EN SALUD 2",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: ["EDUCACIÓN EN SALUD 1"],
+        creditos: 3
+    },
+    {
+        nombre: "INVESTIGACIÓN EN SALUD 2",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: ["INVESTIGACIÓN EN SALUD 1"],
+        creditos: 5
+    },
+    {
+        nombre: "CIENCIAS SOCIALES Y SALUD 3",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: ["CIENCIAS SOCIALES Y SALUD 2"],
+        creditos: 4
+    },
+    {
+        nombre: "CURSO DE FORMACIÓN GENERAL 3",
+        semestre: "Año 3 - Semestre 2",
+        prerrequisitos: [],
+        creditos: 2
+    },
 ];
