@@ -32,10 +32,10 @@ footer {
   border: 2px solid #a30000;
   padding: 20px;
   border-radius: 20px;
-  width: 90%;
-  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.05);
+  width: 100%;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   min-width: 200px;
-  max-width: 500px;
+  max-width: 320px;
   align-items: center;
   background-color: #ffdfdf;
   box-sizing: border-box;
