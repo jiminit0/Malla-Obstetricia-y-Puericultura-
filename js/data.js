@@ -172,12 +172,12 @@ const cursos = [
         nombre: "GINECOLOGÍA FISIOLÓGICA",
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["HISTOLOGÍA", "ANATOMÍA", "FISIOLOGÍA DE SISTEMAS"],
-        creditos: 3
+        creditos: 5
     },    {
         nombre: "FISIOPATOLOGÍA",
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["FISIOLOGÍA DE SISTEMAS"],
-        creditos: 3
+        creditos: 5
     },    {
         nombre: "INFECTOLOGÍA",
         semestre: "Año 2 - Semestre 2",
@@ -187,7 +187,7 @@ const cursos = [
         nombre: "FARMACOLOGÍA",
         semestre: "Año 2 - Semestre 2",
         prerrequisitos: ["BIOQUÍMICA", "FISIOLOGÍA DE SISTEMAS"],
-        creditos: 3
+        creditos: 4
     },    {
         nombre: "INTEGRACIÓN AL DESEMPEÑO PROFESIONAL 2",
         semestre: "Año 2 - Semestre 2",
