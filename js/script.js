@@ -23,12 +23,33 @@ document.addEventListener("DOMContentLoaded", () => {
                 const div = document.createElement("div");
                 div.className = "curso";
                 div.textContent = curso.nombre;
-
+                div.innerHTML = `
+                <strong>${curso.nombre}</strong><br>
+                <small>${curso.creditos} créditos</small>
+                `;
+                let locked = false;
+                if (curso.prerrequisitos.length > 0 && !curso.prerrequisitos.every(pr => aprobados.has(pr))) {
+                    locked = true;
+                }
+                if (curso.creditosMinimos) {
+                    let totalCreditos = 0;
+                    cursos.forEach(c => {
+                        if (aprobados.has(c.nombre)) {
+                            totalCreditos += (c.creditos || 0);
+                        }
+                    });
+                    if (totalCreditos < curso.creditosMinimos) {
+                        locked = true;
+                    }
+                }
                 const locked = curso.prerrequisitos.length > 0 &&
                     !curso.prerrequisitos.every(pr => aprobados.has(pr));
 
                 if (locked) {
                     div.classList.add("locked");
+                    if (curso.creditosMinimos) {
+                        div.title += ` - requiere ${curso.creditosMinimos} créditos aprobados`;
+                    }
                 } else {
                     div.addEventListener("click", () => {
                         if (aprobados.has(curso.nombre)) {
