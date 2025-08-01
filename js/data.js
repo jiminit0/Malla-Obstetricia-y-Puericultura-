@@ -237,7 +237,7 @@ const cursos = [
         nombre: "MÓDULO INTEGRADO INTERDISCIPLINADO MULTIPROFESIONAL 1",
         semestre: "Año 3 - Semestre 1",
         prerrequisitos: [],
-        creditos: 4
+        creditos: 4,
         creditosMinimos: 90
     },
     {
