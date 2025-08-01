@@ -372,5 +372,52 @@ const cursos = [
         prerrequisitos: ["MÓDULO INTEGRADO INTERDICIPLINARIO MULTIPROFESIONAL 1"],
         creditos: 5
     },
+{
+  semestre: "Año 5",
+  cursos: [
+    {
+      nombre: "SEMINARIO UNIDAD DE INVESTIGACIÓN 1",
+      creditos: 2,
+      prerrequisitos: ["INVESTIGACIÓN EN SALUD 3"],
+      semestreExacto: "Semestre 1"
+    },
+    {
+      nombre: "SEMINARIO UNIDAD DE INVESTIGACIÓN 2",
+      creditos: 4,
+      prerrequisitos: ["SEMINARIO UNIDAD DE INVESTIGACIÓN 1"],
+      semestreExacto: "Semestre 2"
+    },
+    {
+      nombre: "INTERNADO NEONATOLOGÍA",
+      creditos: 10,
+      prerrequisitos: ["CLÍNICA NEONATAL 2"],
+      semestreExacto: "Ambos"
 
+    },
+    {
+      nombre: "INTERNADO OBSTETRICIA",
+      creditos: 10,
+      prerrequisitos: ["CLÍNICA DE PARTOS 2", "CLÍNICA DE ALTO RIESGO OBSTÉTRICO"],
+      semestreExacto: "Ambos"
+    },
+    {
+      nombre: "INTERNADO ATENCIÓN PRIMARIA",
+      creditos: 10,
+      prerrequisitos: ["CLÍNICA DE ATENCIÓN PRIMARIA 2"],
+      semestreExacto: "Ambos"
+    },
+    {
+      nombre: "INTERNADO GINECOLOGÍA",
+      creditos: 10,
+      prerrequisitos: ["CLÍNICA DE ENFERMERÍA MÉDICO QUIRÚRGICA"],
+      semestreExacto: "Ambos"
+    },
+    {
+      nombre: "INTERNADO ELECTIVO",
+      creditos: 15,
+      semestreExacto: "Ambos",
+      creditosMinimos: 240
+    }
+  ]
+}
 ];
