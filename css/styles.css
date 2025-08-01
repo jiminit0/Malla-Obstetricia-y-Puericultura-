@@ -50,9 +50,10 @@ footer {
   font-size: 1.5rem;
 }
 .cursos {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
-    gap: 10px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 15px;
 }
 .curso {
   border: 1px solid #ffb5b5;
