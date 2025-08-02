@@ -2,6 +2,14 @@ document.addEventListener("DOMContentLoaded", () => {
     const container = document.getElementById("malla-container");
     const aprobados = new Set();
 
+    const cursosGuardados = localStorage.getItem("cursosAprobados");
+    if (cursosGuardados) {
+        const parsed = JSON.parse(cursosGuardados);
+        parsed.forEach(nombre => aprobados.add(nombre));
+    }
+    function guardarAprobados() {
+        localStorage.setItem("cursosAprobados", JSON.stringify([...aprobados]));
+    }
     function crearCurso(curso) {
         const div = document.createElement("div");
         div.className = "curso";
@@ -40,6 +48,7 @@ document.addEventListener("DOMContentLoaded", () => {
                 } else {
                     aprobados.add(curso.nombre);
                 }
+                guardarAprobados();
                 render();
             });
         }
